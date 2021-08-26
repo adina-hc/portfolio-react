@@ -4,20 +4,35 @@ import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
   return (
-    <header className="bg-black-600">
+    <header className="bg-green-900">
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-black-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
+            className="inlineflex-flex items-center py-6 px-3 mr-4 text-green-100 hover:text-green-200 text-4xl font-bold cursive tracking-wide"
           >
             Adina Henderson
           </NavLink>
-          <NavLink to="/project">Projects</NavLink>
-          <NavLink to="/resume">Resume</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink
+            to="/project"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200 hover:text-green-500"
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            to="/resume"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200 hover:text-green-500"
+          >
+            Resume
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200 hover:text-green-500"
+          >
+            Contact
+          </NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
           <SocialIcon
