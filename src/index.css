@@ -6,9 +6,14 @@
 
 .cursive{
   font-family: "Inconsolata", cursive;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home-title {
-  font-size: 150px;
+  font-size: 100px;
+}
+
+.profile-picture {
+  height: 300px;
+  width: 300px;
 }
