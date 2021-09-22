@@ -1,5 +1,6 @@
-const projects = [
+const projectSeed = [
   {
+    id: "5",
     name: "Pata de Perro",
     description:
       "This application allows the user to choose from a variety of vacation activities, book and pay for them, while saving their selections if they are off-line",
@@ -8,6 +9,16 @@ const projects = [
     deployment: "https://shrouded-bayou-22662.herokuapp.com/",
   },
   {
+    id: "4",
+    name: "Happy Pets Shelter",
+    description:
+      "Happy Pets Shelter! An app to help pets find a new family. The user can view pets sheltered for future adoption.",
+    image: "./assets/images/happy-pets.png",
+    gitHubLink: "https://github.com/adina-hc/happy-pets-shelter-app",
+    deployWebsite: "https://desolate-tundra-25750.herokuapp.com/",
+  },
+  {
+    id: "3",
     name: "Sports Almanac",
     description:
       "The sports almanac application provides the user with meaningful information about soccer matches on a certain date, team information, and the ability to access video snippets related to that league's matches, goals, etc.",
@@ -16,6 +27,7 @@ const projects = [
     deployment: "https://adina-hc.github.io/sports-almanac/",
   },
   {
+    id: "2",
     name: "Weather App",
     description:
       "Weather Application featuring current weather and five day forecast for a city searched. The information includes date, temperature, humidity, wind speed and only for the current weather, the current UV index.",
@@ -24,6 +36,7 @@ const projects = [
     deployment: "https://adina-hc.github.io/06-weather-dashboard/",
   },
   {
+    id: "1",
     name: "Coding Assessment",
     description:
       "The Coding Assessment application features JavaScript timed multiple choice questions, and restults storage for history of high scores.",
@@ -33,4 +46,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default projectSeed;
