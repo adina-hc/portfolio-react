@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import projects from "../seeds/projects.js";
+import projectSeed from "../seeds/projects.js";
 
 const Card = () => {
-    const [project, setProject] = useState([projects]);
+    const [projects, setProjects] = useState([projectSeed]);
 
   return (
     <>
@@ -10,15 +10,14 @@ const Card = () => {
         Cards with projects go here
         <div className="divide-y divide-gray-200">
           {projects.map}((project) => {
-            <div key={projects.id} className="py-4 flex">
+            <div key={projectSeed.id} className="py-4 flex">
               <img
                 className="h-10 w-10 rounded-full object-cover"
-                src={projects.image}
-              />
-              <h2>{projects.title}</h2>
+                src={projectSeed.image} alt=""/>
+              <h2>{projectSeed.title}</h2>
               <div className="ml-3">
                 <p className="text-sm font-medium text-gray-900">
-                  {projects.description}
+                  {projectSeed.description}
                 </p>
               </div>
             </div>
