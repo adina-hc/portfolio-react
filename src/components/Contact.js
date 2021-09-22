@@ -1,5 +1,11 @@
 import React from "react";
+import Background from "./Background";
 
 export default function Contact() {
-  return <h1>Contact Page</h1>;
+  return (
+  <>
+    <Background/>
+    <h1>Contact Page</h1>
+  </>  
+    );
 }
