@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../images/the-matrix.png";
+import bgImage from "../assets/images/the-matrix.png";
 
 function Background() {
     return ( 

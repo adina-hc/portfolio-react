@@ -16,6 +16,12 @@ export default function NavBar() {
             Adina Henderson
           </NavLink>
           <NavLink
+            to="/about"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200 hover:text-green-500"
+          >
+            About
+          </NavLink>
+          <NavLink
             to="/project"
             className="inline-flex items-center py-3 px-3 my-6 rounded text-green-200 hover:text-green-500"
           >
