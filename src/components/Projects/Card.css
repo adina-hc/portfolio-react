@@ -1,0 +1,25 @@
+.card-container {
+    flex-wrap: wrap;
+    background-color: black;
+    opacity: 0.3;
+    margin:0;
+    padding: 10px;
+    height: min-content;
+    width: max-content;
+}
+.project-image {
+    height: 30%;
+    width: 30%;
+    
+}
+
+.project-title {
+    font-size: larger;
+    text-align: center;
+    
+    
+}
+.project-description {
+    font-size: medium;
+    text-align: center;
+}
