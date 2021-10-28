@@ -1,30 +1,28 @@
 import React from "react";
-import Background from "../Background";
-import profilePic from "../../images/adina-portfolio.JPG";
-import Footer from "../Footer"
+import HomeBg from "../Home/HomeBg";
+import Profile from "../Profile";
+
 import '../../index.css'
 
 export default function Home() {
   return (
     <>
-      <Background />
-      <main className="h-5/6">
-        <div className="absolute md:flex-shrink p-20 justify-center">
-          <img
-            src={profilePic}
-            alt="Profile"
-            className="profile-picture relative rounded-full h-15 w-15 ring-grey-900 shadow-md flex-grow-0"
-          />
+      <HomeBg />
+      <div className="w-100 h-30 flex items-center justify-center bg-green-900 p-6">
+        <div className="content-center justify-center p-20">
+          <Profile />
         </div>
-        <section className="home-page relative flex justify-center md:overflow-scroll  min-h-screen  pt-12 lg:pt-64 px-8">
-          <div className="absolute pt-72 md:px-96">
-            <h1 className="typewriter home-text text-4xl text-green-100 font-bold cursive leading-none lg:leading-snug ">
-              Hello. Welcome. I'm Adina Henderson
-            </h1>
+        <div className="flex flex-wrap relative flex-grow text-center m-20 justify-center p-8 md:p-10 lg:p-20 opacity-60 rounded-lg">
+          <div className="container fcontent-right ">
+            <div className="absolute flex-shrink p-5 rounded-lg">
+              <h1 className="typewriter inline-block align-middle -mt-5 text-4xl text-white  font-bold cursive leading-none lg:leading-normal">
+                Hello. Welcome. <br/><br/>I'm Adina Henderson
+              </h1>
+            </div>
           </div>
-        </section>
-      </main>
-      <Footer />
+        </div>
+      </div>
+ 
     </>
   );
 }
