@@ -1,5 +1,6 @@
 // Import resources
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
+import { HashRouter as HRouter} from 'react-router-dom';
 import Home from './components/Home';
 import About from "./components/About/";
 import Project from './components/Projects';
@@ -13,7 +14,7 @@ function App() {
   
   return (
     <>
-    <BrowserRouter>
+    <HRouter basename={process.env.PUBLIC_URL}>
       <NavBar />
       <Switch>
         <Route component={Home} path="/" exact />
@@ -22,7 +23,7 @@ function App() {
         <Route component={Resume} path="/resume" />
         <Route component={Contact} path="/contact" />
       </Switch>    
-    </BrowserRouter>
+    </HRouter>
     <Footer />
     </>
   );
