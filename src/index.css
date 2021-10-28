@@ -4,6 +4,24 @@
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
 
+/* Template variables */
+:root {
+  --contact-opt: #d1e8e2;
+  --resume: #5d5c61;
+  --work: #b1a296;
+  --light: #eee2dc;
+  --base: black;
+  --contact: #1b2631;
+  --about-me: #023213;
+  --abm: #1c3334;
+  --title-fonts: "Aktiv Grotesk", "Segoe UI";
+  --other-fonts: "Source Sans Pro ExtraLight", "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  --article-fonts: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --reset-fonts: Arial, Helvetica, sans-serif;
+}
+
 .cursive{
   font-family: "Inconsolata", cursive;
   font-weight: 600;
@@ -16,4 +34,46 @@
 .profile-picture {
   height: 300px;
   width: 300px;
+}
+
+/*  Home Page */
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid green;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blinking .75s step-end infinite;
+}
+  /* Typing effect */
+@keyframes typing {
+  from { width:0 }
+  to { width: 100% }
+}
+  /* Cursor effect */
+@keyframes blinking {
+  from, to {border-color: transparent }
+  50% { border-color: green;} 
+}
+/* About Me Page */
+
+.about-me {
+  background-color: var(--about-me);
+}
+
+.article-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column; /* see if this is actually a row */
+}
+
+/* Contact section */
+.contact-me {
+  display: flex;
+  /* Adding scroll stop at the start of the section  */
+  scroll-snap-align: start;
+  background-color: var(--contact);
+  color: var(--contact-opt)
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../Projects/Card";
 import { projectData } from "../../seeds/projectSeed";
-import Projects from '../Projects';
+
 
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 

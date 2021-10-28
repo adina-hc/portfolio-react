@@ -1,16 +1,22 @@
 import React from "react";
-import Background from "../Background";
+
 import ContactForm from "./ContactForm";
+import LinkedIn from "./LinkedIn";
+
 
 export default function Contact() {
   return (
     <>
-      <Background />
-      <section id="contact-me" className="contact-me">
-        <div className="center-content">
-          <ContactForm />
+      <div className="bg-black">
+        <div id="contact-me" className="contents space-x-4">
+          <div className="relative p-5 flex-1 inline-block">
+            <ContactForm />
+            <div className="relative flex-1 inline-block">
+              <LinkedIn />
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }
