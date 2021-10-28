@@ -1,13 +1,15 @@
 import React from "react";
-import bgImage from "../assets/images/the-matrix.png";
+import bgImage from "../images/hero.png";
 
 function Background() {
-    return ( 
+    return (
+      <div className="absolute ">
         <img
-        src={bgImage}
-        alt="The Matrix"
-        className="absolute object-cover w-full h-full"
-      />
+          src={bgImage}
+          alt="The Matrix"
+          className="items-center justify-center bg-cover bg-center w-full h-full bg-no-repeat bg-cover bg-fixed"
+        />
+      </div>
     );
 }
 
