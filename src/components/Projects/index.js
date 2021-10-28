@@ -7,7 +7,7 @@ const Projects = () => {
   
   return (
     <>
-      <div className="bg-green-900 opacity-90">
+      <div className="bg-yellow-100 opacity-90">
         
           <div className=" ">
             {projectData.map((project, index) => {
