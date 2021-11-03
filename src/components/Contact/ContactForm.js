@@ -75,7 +75,7 @@ export default function ContactForm() {
                   >
                     Send
                   </button>
-                  <p className="text-white px-5 pt-5 text-sm">Or email me: ahenderson.mail@gmail.com</p>
+                  <p className="text-white px-5 pt-5 text-sm">Or email me: ahenderson.career@gmail.com</p>
                 </div>
               </div>
               <div class="md:w-2/3"></div>
