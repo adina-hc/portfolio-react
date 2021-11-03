@@ -5,10 +5,9 @@ import Frame from "./Frame";
 export default function resume() {
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-black m-auto">
 
-
-        <div className="relative w-full  max-w-prose h-1/2 w-9/12">
+        <div className="relative w-full  max-w-prose h-1/2 w-9/12 max-w-max">
           <Frame />
         </div>
      
