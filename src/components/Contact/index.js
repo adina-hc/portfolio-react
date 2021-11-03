@@ -12,12 +12,12 @@ export default function Contact() {
           id="contact-me"
           className="contents space-x-4 bg-blue-100 p-10 min-w-min "
         >
-          <div className="relative p-5 inline-block">
+          <div className="relative p-5 block">
             <ContactForm />
           </div>
         </div>
 
-        <div className="relative inline-block rounded-md m-6 w-auto ">
+        <div className="relative block rounded-md m-6 w-auto bg-black">
           <div className="p-2 min-w-min inline-block  rounded-md mx-2 object-cover">
             <LinkedIn />
           </div>
