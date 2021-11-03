@@ -8,14 +8,18 @@ export default function Contact() {
   return (
     <>
       <section className="min-h-screen bg-black">
-        <div className="bg-black pt-12 max-h-full">
-          <div id="contact-me" className="contents space-x-4">
-            <div className="relative p-5 flex-1 inline-block">
-              <ContactForm />
-              <div className="relative flex-1 inline-block">
-                <LinkedIn />
-              </div>
-            </div>
+        <div
+          id="contact-me"
+          className="contents space-x-4 bg-blue-100 p-10 min-w-min "
+        >
+          <div className="relative p-5 inline-block">
+            <ContactForm />
+          </div>
+        </div>
+
+        <div className="relative inline-block rounded-md m-6 w-auto ">
+          <div className="p-2 min-w-min inline-block  rounded-md mx-2 object-cover">
+            <LinkedIn />
           </div>
         </div>
       </section>
