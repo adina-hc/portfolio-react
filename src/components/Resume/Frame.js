@@ -4,8 +4,8 @@ import resumeDoc from "../../assets/AH-Resume.pdf";
 const Frame = () => {
     return (
       <>
-        <div id="resume" className="flex resume p-20">
-          <article className="article-content">
+        <div id="resume" className="flex resume p-20 min-w-max">
+          <article className="article-content min-w-max">
             <iframe
               className="h-screen"
               title="Display Resume"
