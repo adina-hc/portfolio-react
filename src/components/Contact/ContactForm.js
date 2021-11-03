@@ -2,18 +2,18 @@ import React from "react";
 
 export default function ContactForm() {
   return (
-    <div className="p-2 ">
-      <div className="p-2 content-left rounded-lg ">
+    
+      <div className="rounded-sm content-left rounded-lg ">
         <form
-          class="p-8 items-start w-full m-h-full bg-green-90"
+          class="rounded-md  bg-green-900"
           action="https://formsubmit.co/ahenderson.career@gmail.com"
           method="POST"
         >
-          <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="flex flex-wrap mx-4 pt-2 mb-6">
             <div className="w-11/12 text-white">
               <label
                 htmlFor="grid-first-name"
-                className="block tracking-wide text-white text-lg font-bold mb-2"
+                className="block tracking-wide text-white text-md font-bold mb-2"
               >
                 Full Name
               </label>
@@ -26,10 +26,10 @@ export default function ContactForm() {
                 placeholder="Full Name"
               />
             </div>
-            <div className="flex flex-wrap -mx-3 mb-6 ">
+            <div className="flex flex-wrap -mx-2 mb-6 ">
               <div className="w-11/12 px-3">
                 <label
-                  class="block tracking-wide text-white text-lg font-bold mb-2"
+                  class="block tracking-wide text-white text-md font-bold mb-2"
                   for="grid-password"
                 >
                   E-mail
@@ -48,11 +48,11 @@ export default function ContactForm() {
                   value="https://mydomain.com/thanks.html"
                 />
               </div>
-              <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="flex flex-wrap mb-6">
                 <div className="w-11/12 px-3">
                   <label
                     htmlFor="grid-password"
-                    class="block tracking-wide text-white text-lg font-bold mb-2"
+                    class="block tracking-wide text-white text-md font-bold mb-2"
                   >
                     Message
                   </label>
@@ -71,12 +71,11 @@ export default function ContactForm() {
                 <div class="md:w-2/3">
                   <button
                     type="submit"
-                    className="opacity-100 shadow bg-green-900 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold p-2 py-2 px-4 rounded"
+                    className="opacity-100 shadow bg-green-700 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold p-2 py-2 px-4 mx-4 rounded"
                   >
                     Send
                   </button>
-
-                  <p className="text-white pt-5">Or email me: ahenderson.mail@gmail.com</p>
+                  <p className="text-white px-5 pt-5 text-sm">Or email me: ahenderson.mail@gmail.com</p>
                 </div>
               </div>
               <div class="md:w-2/3"></div>
@@ -84,6 +83,6 @@ export default function ContactForm() {
           </div>
         </form>
       </div>
-    </div>
+
   );
 }
